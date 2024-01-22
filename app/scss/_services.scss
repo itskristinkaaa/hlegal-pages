@@ -1,0 +1,42 @@
+.services {
+	padding: 60px 0;
+	&__list {
+		display: flex;
+	}
+
+	&__list-item {
+		padding: 20px;
+		flex: 1 1 33.333%;
+		@include flex-center;
+
+		&:first-child {
+			background:  yellow;
+			// background: yellow url('dasdsa') no-repeat center/150px 80px;
+			p {
+				color: $active-color;
+				font-weight: 700;
+				font-size: 30px;
+			}
+		}
+		&:nth-child(2) {
+			background: orange;
+		}
+		&:nth-child(3) {
+			background: red;
+		}
+	}
+	&__btn {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		font-size: 40px;
+		width: 70px;
+		height: 70px;
+		z-index: 200;
+		cursor: pointer;
+		color: $basic-white;
+		background: $active-color;
+		border-radius: $radius-rounded;
+	}
+}
+
