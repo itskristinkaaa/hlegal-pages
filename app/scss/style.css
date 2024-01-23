@@ -430,6 +430,7 @@ body {
 .tabs__links::-webkit-scrollbar {
   width: 0;
 }
+
 @media (min-width: 768px) {
   .tabs__links {
     margin-right: calc(-50vw + 324px);

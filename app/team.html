@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="scss/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>Team</title>
 </head>
 <body>
@@ -55,7 +55,7 @@
 						<a class="header__list-link" href="#">services</a>
 					</li>
 					<li class="header__list-item">
-						<a class="header__list-link" href="#">team</a>
+						<a class="header__list-link active" href="#">team</a>
 					</li>
 					<li class="header__list-item">
 						<a class="header__list-link" href="#">publications</a>
@@ -67,40 +67,105 @@
 			</nav>
 		</div>
 	</header>
-	<div class="team__text">We are used to taking responsibility and always guarantee honest, timely assistance, even in situations where most are powerless.</div>
-	<div class="users">
-		<div class="users__card">
-			<img src="images/AlexanderAlexandrovskiy.png">
-			<p class="users__name">Alexander Alexandrovsky</p>
-			<p class="users__job">Managing partner</p>
-		</div>
-		<div class="users__card">
-			<img src="images/EvgenyPatrikov.png">
-			<p class="users__name">Евгений Патриков</p>
-			<p class="users__job">Equity partner, Attorney-at-law</p>
-		</div>
-		<div class="users__card">
-			<img src="images/VladyslavMelnik.png">
-			<p class="users__name">Vladislav Melnik</p>
-			<p class="users__job">Associate</p>
-		</div>
-		<div class="users__card">
-			<img src="images/SergeyBinn.png">
-			<p class="users__name">Sergey Binn</p>
-			<p class="users__job">Associate</p>
-		</div>
-		<div class="users__card">
-			<img src="images/OksanaKobzar.png">
-			<p class="users__name">Oksana Kobzar</p>
-			<p class="users__job">Equity partner, Attorney-at-law</p>
-		</div>
-		<div class="users__card">
-			<img src="images/JuliaWolk.png">
-			<p class="users__name">Julia Wolk</p>
-			<p class="users__job">Associate, Attorney-at-law</p>
+	<div class="container">
+		<div class="team__text">We are used to taking responsibility and always guarantee honest, timely assistance, even in situations where most are powerless.</div>
+		<div class="users">
+			<a href="#" class="users__card">
+				<img src="images/AlexanderAlexandrovskiy.png">
+				<div class="users__info_wrapper">
+					<div class="users__info">
+						<span class="users__name">Alexander Alexandrovsky</span>
+						<span class="users__job">Managing partner</span>
+					</div>
+					<img src="./images/more.svg" alt="more" class="users__more"/>
+				</div>
+			</a>
+
+			<a href="#" class="users__card">
+				<img src="images/EvgenyPatrikov.png">
+				<div class="users__info_wrapper">
+					<div class="users__info">
+						<span class="users__name">Evgeny Patrikov</span>
+						<span class="users__job">Equity partner, Attorney-at-law</span>
+					</div>
+					<img src="./images/more.svg" alt="more" class="users__more"/>
+				</div>
+			</a>
+
+			<a href="#" class="users__card">
+				<img src="images/VladyslavMelnik.png">
+				<div class="users__info_wrapper">
+					<div class="users__info">
+						<span class="users__name">Владислав Vladislav Melnik</span>
+						<span class="users__job">Associate</span>
+					</div>
+					<img src="./images/more.svg" alt="more" class="users__more"/>
+				</div>
+			</a>
+
+			<a href="#" class="users__card">
+				<img src="images/SergeyBinn.png">
+				<div class="users__info_wrapper">
+					<div class="users__info">
+						<span class="users__name">Sergey Binn</span>
+						<span class="users__job">Associate</span>
+					</div>
+					<img src="./images/more.svg" alt="more" class="users__more"/>
+				</div>
+			</a>
+
+			<a href="#" class="users__card">
+				<img src="images/OksanaKobzar.png">
+				<div class="users__info_wrapper">
+					<div class="users__info">
+						<span class="users__name">Оксана Кобзарь</span>
+						<span class="users__job">Equity partner, Attorney-at-law</span>
+					</div>
+					<img src="./images/more.svg" alt="more" class="users__more"/>
+				</div>
+			</a>
+
+			<a href="#" class="users__card">
+				<img src="images/JuliaWolk.png">
+				<div class="users__info_wrapper">
+					<div class="users__info">
+						<span class="users__name">Julia Wolk</span>
+						<span class="users__job">Associate, Attorney-at-law</span>
+					</div>
+					<img src="./images/more.svg" alt="more" class="users__more"/>
+				</div>
+			</a>
 		</div>
 	</div>
+	<footer>
+		<div class="footer__wrapper container">
+			<div>
+			<ul class="footer__location">
+				<li>
+					<p class="footer__address">Kyiv, Mechnikova str., 14/1</p>
+				</li>
+				<li>
+					<a href="#" class="footer__onmap">On map</a>
+				</li>
+			</ul>
 
+			<ul class="footer__contacts">
+				<li>
+					<a href="#">
+						<img src="images/facebook.svg" alt="facebook"/>
+					</a>
+				</li>
+				<li>
+					<a href="tel:0800211927" class="footer__phone">0800 211 927</a>
+				</li>
+				<li>
+					<a href="mailto:contact@forstudy.space" class="footer__mail">contact@forstudy.space</a>
+				</li>
+			</ul>
+			</div>
+			<p class="footer__copyright">© 2021 HLEGAL Law company, LLC</p>
+		</div>
+	</footer>
 	<script src="js/main.min.js"></script>
 </body>
 </html>

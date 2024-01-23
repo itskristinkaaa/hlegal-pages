@@ -15,7 +15,7 @@
 (() => {
 	const tabsItem = document.querySelectorAll('.tabs__links-item')
 	const tabsBlock = document.querySelectorAll('.tabs__content-item')
-	
+
 	tabsItem.forEach((tab, index) => {
 		tab.addEventListener('click', () => {
 			tabsBlock.forEach((content) => {
@@ -48,10 +48,10 @@ const swiper = new Swiper('.team__swiper', {
   // },
 
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-		clickable: true
-  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+	// 	clickable: true
+  // },
 });
 
 // POPUP

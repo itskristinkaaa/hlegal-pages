@@ -1,6 +1,109 @@
+.team__text {
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: 700;
+  background: var(--Gradient-Red-Text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.users__card {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.users__card > img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.users__card:hover .users__more {
+  transform: rotate(-90deg);
+}
+
+.users__more {
+  transition: .2s;
+}
+
+.users__info_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.users__info {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.users__name {
+  color: var(--Main-Regular, #323264);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.users__job {
+  color: var(--Grey-Text, #B3B3BA);
+  line-height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .users {
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 60px;
+  }
+
+  .users__card {
+    width: 294px;
+  }
+
+  .users__card > img {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .users__card {
+    width: 261px;
+  }
+
+  .users__card > img {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .users__card {
+    width: 400px;
+  }
+
+  .users__card > img {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .users__card {
+    width: 493px;
+  }
+
+  .users__card > img {
+    height: 300px;
+  }
 }
